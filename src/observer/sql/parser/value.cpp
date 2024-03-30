@@ -171,9 +171,6 @@ void Value::set_date(int val)
   int day=val%100;
 
 
-  if(year<=1969 || year>=2039){
-    flag=false;
-  }
 
   if(month==0 || month>12){
     flag=false;
@@ -216,11 +213,6 @@ void Value::set_date(int val)
     }
   }
 
-  if(year==2038){
-    if(month>=2){
-      flag=false;
-    }
-  }
 
 
 if(flag){
