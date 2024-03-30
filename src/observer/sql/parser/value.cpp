@@ -231,7 +231,7 @@ if(flag){
 else{
     attr_type_ = UNDEFINED;
     num_value_.date_value_ = val;
-    length_ = sizeof(val);
+    length_ = sizeof(0);
 }
 
 }
